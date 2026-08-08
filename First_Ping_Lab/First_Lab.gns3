@@ -22,8 +22,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"516\" height=\"216\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">R1 &gt; enable\nR1 # config terminal   \nR1(config)#interface g1/0\nR1(config-if)#ip add 192.168.12.1 255.255.255.0\nR1(config-if)#no shutdown\nR1(config-if)#\nR1(config)#do show ip interface\n  Internet address is 192.168.12.1/24\n  Broadcast address is 255.255.255.255\nR1#show ip interface brief\nInterface                  IP-Address      OK? Method Status                Protocol\nFastEthernet0/0            unassigned      YES unset  administratively down down\nGigabitEthernet1/0         192.168.12.1    YES manual up                    up</text></svg>",
-                "x": -979,
-                "y": -475,
+                "x": -1069,
+                "y": -476,
                 "z": 2
             },
             {
@@ -31,8 +31,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"516\" height=\"216\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">R2 &gt; enable\nR2 # config terminal   \nR2(config)#interface g1/0\nR2(config-if)#ip add 192.168.12.2 255.255.255.0\nR2(config-if)#no shutdown\nR2(config-if)#\nR2(config)#do show ip interface\n  Internet address is 192.168.12.2/24\n  Broadcast address is 255.255.255.255\nR2(config)#do show ip interface brief\nInterface                  IP-Address      OK? Method Status                Protocol\nFastEthernet0/0            unassigned      YES unset  administratively down down\nGigabitEthernet1/0         192.168.12.2    YES manual up                    up</text></svg>",
-                "x": -391,
-                "y": -487,
+                "x": -482,
+                "y": -477,
                 "z": 2
             },
             {
@@ -67,8 +67,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "c0524ef1fce42b0f29114245c3d0b809.svg",
-                "x": -982,
-                "y": -53,
+                "x": -1070,
+                "y": -73,
                 "z": 2
             },
             {
@@ -193,8 +193,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg width=\"402\" height=\"56\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">What is Ping: \n\tPing is Nothing but reachability between devices\n\tin this it show the latenct and round trip times</text></svg>",
-                "x": -980,
-                "y": -143,
+                "x": -1064,
+                "y": -140,
                 "z": 2
             },
             {

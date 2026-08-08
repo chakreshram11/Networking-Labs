@@ -1,0 +1,8 @@
+# GNS3 temporary and lock files
+*.lock
+*_lock
+ubridge.log
+ilt_*
+dynamips_*_log.txt
+dynamips_*_stdout.txt
+vpcs.log
