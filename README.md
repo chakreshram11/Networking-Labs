@@ -4,45 +4,6 @@ Welcome to the **Networking Labs** repository! This project contains hands-on ne
 
 ---
 
-## 📁 Repository Structure
-
-```text
-Networking-Labs/
-├── First_Ping_Lab/          # Lab 1: Basic IP Configuration & ICMP Ping Verification
-│   ├── First_Lab.gns3       # GNS3 Topology file
-│   └── project-files/       # Device startup configs, VPCS state, packet captures (.pcap)
-│
-├── Second_SSH_Lab/          # Lab 2: SSH Configuration & Secure Remote Management
-│   ├── Second_Lab.gns3      # GNS3 Topology file
-│   └── project-files/       # Router startup configs & SSH key parameters
-│
-└── README.md                # Project documentation
-```
-
----
-
-## 🚀 Lab Overview
-
-### 1️⃣ First Ping Lab (`First_Ping_Lab/`)
-* **Objective**: Establish baseline IP connectivity between Cisco routers and Virtual PC Simulator (VPCS) instances, and analyze ICMP traffic using Wireshark.
-* **Key Concepts**:
-  - Cisco IOS Interface IP Addressing (`GigabitEthernet`, `FastEthernet`)
-  - Admin state management (`no shutdown`)
-  - Subnetting (`192.168.12.0/24`)
-  - Verification using `show ip interface brief` and `ping` commands
-  - Packet capturing (`.pcap`) between router and switch nodes.
-
-### 2️⃣ Second SSH Lab (`Second_SSH_Lab/`)
-* **Objective**: Configure and verify Secure Shell (SSH v2) on Cisco IOS devices for secure CLI administration over an IP network (`192.168.1.0/24`).
-* **Key Concepts**:
-  - Hostname and IP Domain Name configuration (`ip domain-name`)
-  - RSA Crypto Key Generation (`crypto key generate rsa`)
-  - Local User Authentication (`username <user> secret <pass>`)
-  - Line VTY Configuration (`transport input ssh`, `login local`)
-  - SSH client connection testing and version verification.
-
----
-
 ## 🛠️ Prerequisites & Tools
 
 To run and interact with these labs, you will need:
