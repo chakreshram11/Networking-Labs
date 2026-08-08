@@ -1,0 +1,25 @@
+<svg width="883" height="408"><text font-family="TypeWriter" font-size="10.0" font-weight="bold" fill="#000000" fill-opacity="1.0">Ping :
+-&gt; Ping is used for Test network connectivity
+-&gt; Test Network Interface Card
+-&gt; Test DNS name resolution issues
+
+Ping Protocol:
+-&gt; Ping Uses ICMP Protocol ( Internet Control Messaging Protocol ) 
+-&gt; It is a Layer 3 Protocol 
+
+Process:
+-&gt; First our system will send the 4 packets to the server.
+-&gt; Second the server will reply to all 4 packets and sent to our system.
+
+Types of Errors: 
+-&gt; 4 times request time out then the server is not available or the server using the firewall so it stops all the packets.
+-&gt; If 1 and 3 packets got reply then
+	Reasons for packet loss:
+		Network congestion
+		Faulty Hardware
+-&gt; if all packets got Destination host unreachable then it is know as it was not connected to internet or there is no data in the server.
+-&gt; if 3 packets loss then it High packet loss
+	Resons for packet loss:
+		Poor Network Issue
+ 		Device Overload
+		Routing Problem</text></svg>
