@@ -1,6 +1,6 @@
 # DHCP Configuration & DORA Packet Analysis
 
-A practical Cisco Packet Tracer / Wireshark lab demonstrating **DHCP server configuration**, the **DORA process**, DHCP packet flow, and important DHCP options.
+A practical GNS3 / Wireshark lab demonstrating **DHCP server configuration**, the **DORA process**, DHCP packet flow, and important DHCP options.
 
 ---
 
@@ -508,7 +508,7 @@ The Cisco router acts as the DHCP server and provides clients with IP addresses,
 ## 🛠️ Technologies & Tools
 
 - Cisco IOS
-- Cisco Packet Tracer / VPCS
+- GNS3 / VPCS
 - Wireshark
 - DHCP
 - UDP
