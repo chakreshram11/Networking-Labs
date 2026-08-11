@@ -4,6 +4,60 @@ Welcome to the **Networking Labs** repository! This project contains hands-on ne
 
 ---
 
+## 📁 Repository Structure
+
+```text
+Networking-Labs/
+├── First_Ping_Lab/          # Lab 1: Basic IP Configuration & ICMP Ping Verification
+│   ├── First_Lab.gns3       # GNS3 Topology file
+│   └── project-files/       # Device startup configs, VPCS state, packet captures (.pcap)
+│
+├── Second_SSH_Lab/          # Lab 2: SSH Configuration & Secure Remote Management
+│   ├── Second_Lab.gns3      # GNS3 Topology file
+│   └── project-files/       # Router startup configs & SSH key parameters
+│
+├── Third_DHCP_Lab/          # Lab 3: DHCP Configuration & DORA Packet Analysis
+│   ├── Third_DHCP_Lab.gns3  # GNS3 Topology file
+│   ├── README.md            # Lab documentation with screenshots
+│   └── project-files/       # Router startup configs & packet captures (.pcap)
+│
+└── README.md                # Project documentation
+```
+
+---
+
+## 🚀 Lab Overview
+
+### 1️⃣ First Ping Lab (`First_Ping_Lab/`)
+* **Objective**: Establish baseline IP connectivity between Cisco routers and Virtual PC Simulator (VPCS) instances, and analyze ICMP traffic using Wireshark.
+* **Key Concepts**:
+  - Cisco IOS Interface IP Addressing (`GigabitEthernet`, `FastEthernet`)
+  - Admin state management (`no shutdown`)
+  - Subnetting (`192.168.12.0/24`)
+  - Verification using `show ip interface brief` and `ping` commands
+  - Packet capturing (`.pcap`) between router and switch nodes.
+
+### 2️⃣ Second SSH Lab (`Second_SSH_Lab/`)
+* **Objective**: Configure and verify Secure Shell (SSH v2) on Cisco IOS devices for secure CLI administration over an IP network (`192.168.1.0/24`).
+* **Key Concepts**:
+  - Hostname and IP Domain Name configuration (`ip domain-name`)
+  - RSA Crypto Key Generation (`crypto key generate rsa`)
+  - Local User Authentication (`username <user> secret <pass>`)
+  - Line VTY Configuration (`transport input ssh`, `login local`)
+  - SSH client connection testing and version verification.
+
+### 3️⃣ Third DHCP Lab (`Third_DHCP_Lab/`)
+* **Objective**: Configure a Cisco router as a DHCP server, dynamically assign IP parameters to VPCS clients, and analyze the complete DORA process with Wireshark screenshots.
+* **Key Concepts**:
+  - Cisco IOS DHCP Server Configuration (`ip dhcp pool`)
+  - Network address allocation, default gateway, and DNS options
+  - IP Address Exclusions (`ip dhcp excluded-address`)
+  - DORA Exchange Analysis (Discover → Offer → Request → Acknowledgment)
+  - DHCP Verification commands (`show ip dhcp pool`, `show ip dhcp binding`)
+  - Screenshots & Wireshark display filters (`dhcp`)
+
+---
+
 ## 🛠️ Prerequisites & Tools
 
 To run and interact with these labs, you will need:
@@ -22,8 +76,8 @@ To run and interact with these labs, you will need:
    ```
 2. Open **GNS3**.
 3. Select **File > Open Project** (`Ctrl + O`).
-4. Navigate into the specific lab folder (e.g., `First_Ping_Lab/` or `Second_SSH_Lab/`).
-5. Select the `.gns3` topology file (e.g., `First_Lab.gns3` or `Second_Lab.gns3`).
+4. Navigate into the specific lab folder (e.g., `First_Ping_Lab/`, `Second_SSH_Lab/`, or `Third_DHCP_Lab/`).
+5. Select the `.gns3` topology file.
 6. Start the nodes and open the consoles to explore or modify device configurations.
 
 ---
