@@ -21,6 +21,12 @@ Networking-Labs/
 │   ├── README.md            # Lab documentation with screenshots
 │   └── project-files/       # Router startup configs & packet captures (.pcap)
 │
+├── Forth_SBI_BANK_PROJECT/  # Lab 4: Static Routing + DHCP + Redundant Path Lab
+│   ├── Forth_SBI_Bank.gns3  # GNS3 Topology file
+│   ├── README.md            # Lab documentation with topology screenshot
+│   ├── images/              # Topology screenshot (images/topology.png)
+│   └── project-files/       # Router startup configs & VPCS state
+│
 └── README.md                # Project documentation
 ```
 
@@ -56,6 +62,17 @@ Networking-Labs/
   - DHCP Verification commands (`show ip dhcp pool`, `show ip dhcp binding`)
   - Screenshots & Wireshark display filters (`dhcp`)
 
+### 4️⃣ Fourth SBI Bank Project (`Forth_SBI_BANK_PROJECT/`)
+* **Objective**: Build a redundant enterprise branch network topology connecting an SBI Bank router to virtual ISP paths (Airtel & Jio) and a simulated Google DNS (`8.8.8.8`) destination, featuring floating static routes, DHCP server allocation, and failover testing.
+* **Key Concepts**:
+  - Multi-router topology (`Google`, `Airtel`, `Jio`, `SBI-BANK`)
+  - Static Routing & Default Routes (`ip route`)
+  - Floating Static Routes using Administrative Distance (AD 10 Primary vs AD 20 Backup)
+  - Cisco IOS DHCP Server (`ip dhcp pool SBI-BANK`) for client network (`192.168.5.0/24`)
+  - Loopback interface configuration (`Loopback0 8.8.8.8/32`)
+  - Failover testing & path verification (`ping`, `traceroute`, interface `shutdown` / `no shutdown`)
+  - Topology screenshot included (`images/topology.png`)
+
 ---
 
 ## 🛠️ Prerequisites & Tools
@@ -76,7 +93,7 @@ To run and interact with these labs, you will need:
    ```
 2. Open **GNS3**.
 3. Select **File > Open Project** (`Ctrl + O`).
-4. Navigate into the specific lab folder (e.g., `First_Ping_Lab/`, `Second_SSH_Lab/`, or `Third_DHCP_Lab/`).
+4. Navigate into the specific lab folder (e.g., `First_Ping_Lab/`, `Second_SSH_Lab/`, `Third_DHCP_Lab/`, or `Forth_SBI_BANK_PROJECT/`).
 5. Select the `.gns3` topology file.
 6. Start the nodes and open the consoles to explore or modify device configurations.
 
