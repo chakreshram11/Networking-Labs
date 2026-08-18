@@ -27,6 +27,12 @@ Networking-Labs/
 │   ├── images/              # Topology screenshot (images/topology.png)
 │   └── project-files/       # Router startup configs & VPCS state
 │
+├── Fifth_OSPF/              # Lab 5: Single-Area OSPF Dynamic Routing Configuration & Verification
+│   ├── Test_OSPF.gns3       # GNS3 Topology file
+│   ├── README.md            # Lab documentation with CLI screenshots & topology
+│   ├── images/              # Topology & CLI screenshots
+│   └── project-files/       # Router startup configs
+│
 └── README.md                # Project documentation
 ```
 
@@ -73,6 +79,17 @@ Networking-Labs/
   - Failover testing & path verification (`ping`, `traceroute`, interface `shutdown` / `no shutdown`)
   - Topology screenshot included (`images/topology.png`)
 
+### 5️⃣ Fifth OSPF Lab (`Fifth_OSPF/`)
+* **Objective**: Configure and verify Single-Area OSPF (Open Shortest Path First) dynamic routing across a linear 3-router Cisco topology (`R1` ↔ `R2` ↔ `R3`), enabling dynamic route discovery and full loopback-to-loopback reachability.
+* **Key Concepts**:
+  - Link-State Dynamic Routing Protocol & Shortest Path First (SPF) algorithm
+  - Single-Area OSPF Architecture (`router ospf 110`, `area 0`)
+  - Loopback Interface Configuration (`Loopback0`) for Router ID and end-to-end reachability testing
+  - Wildcard Masking (`0.0.0.255` for `/24` subnets, `0.0.0.0` for `/32` host routes)
+  - OSPF Adjacency States and Neighbor Relationships (`LOADING` to `FULL`)
+  - Verification & testing via `show ip ospf neighbor`, `show ip route ospf`, and `ping` commands
+  - Comprehensive screenshots included (`images/topology.png`, `images/r1_cli.png`, etc.)
+
 ---
 
 ## 🛠️ Prerequisites & Tools
@@ -93,7 +110,7 @@ To run and interact with these labs, you will need:
    ```
 2. Open **GNS3**.
 3. Select **File > Open Project** (`Ctrl + O`).
-4. Navigate into the specific lab folder (e.g., `First_Ping_Lab/`, `Second_SSH_Lab/`, `Third_DHCP_Lab/`, or `Forth_SBI_BANK_PROJECT/`).
+4. Navigate into the specific lab folder (e.g., `First_Ping_Lab/`, `Second_SSH_Lab/`, `Third_DHCP_Lab/`, `Forth_SBI_BANK_PROJECT/`, or `Fifth_OSPF/`).
 5. Select the `.gns3` topology file.
 6. Start the nodes and open the consoles to explore or modify device configurations.
 
