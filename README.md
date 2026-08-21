@@ -39,6 +39,12 @@ Networking-Labs/
 │   ├── images/              # Topology, CLI & OSPF Database screenshots
 │   └── project-files/       # Router startup configs
 │
+├── Seventh_Lab_OSPF&BGP/    # Lab 7: Multi-Area OSPF & eBGP Route Redistribution Lab
+│   ├── Multi-Area-OSPF-eBGP-Redistribution-Lab.gns3 # GNS3 Topology file
+│   ├── README.md            # Lab documentation with topology screenshot
+│   ├── images/              # Topology screenshot
+│   └── project-files/       # Router startup configs & VPCS state
+│
 └── README.md                # Project documentation
 ```
 
@@ -106,6 +112,17 @@ Networking-Labs/
   - Wildcard Masking (`0.0.0.255` for `/24` subnets, `0.0.0.0` for `/32` host IPs)
   - Verification commands (`show ip ospf database`, `show ip ospf neighbor`, `show ip route ospf`, `ping`)
   - Comprehensive screenshots included (`images/topology.png`, `images/ospf_database.png`, CLI outputs for R1-R4)
+
+### 7️⃣ Seventh Multi-Area OSPF & BGP Lab (`Seventh_Lab_OSPF&BGP/`)
+* **Objective**: Build and configure an enterprise multi-protocol topology integrating a Multi-Area OSPF core (Area 0, Area 1, Area 2), two Area Border Routers (ABRs `R2` & `R3`), an Autonomous System Border Router (ASBR `R1`) with eBGP peering to an external ISP network (`R8` AS 200), mutual two-way route redistribution, and an integrated Cisco IOS DHCP server on `R5`.
+* **Key Concepts**:
+  - Multi-Area OSPF Design (`Area 0` Backbone, `Area 1`, `Area 2`)
+  - ABR Configuration & Area Interconnection (`R2` Area 0↔1, `R3` Area 0↔2)
+  - External BGP (eBGP) Peering between AS 100 (`R1`) and AS 200 (`R8`) over `192.168.20.0/24` link
+  - Two-Way Route Redistribution on ASBR (`redistribute bgp` under OSPF & `redistribute ospf` under BGP)
+  - Cisco IOS DHCP Pool Configuration (`ospf-pool` on `R5` for `192.168.7.0/24`)
+  - End-to-End Route Propagation and Reachability testing (`ping 8.8.8.8`) across autonomous systems
+  - Topology screenshot included (`images/topology.png`)
 
 ---
 
