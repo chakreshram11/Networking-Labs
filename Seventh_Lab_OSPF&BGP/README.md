@@ -378,3 +378,11 @@ PC1> ping 8.8.8.8
 - Topology file: `Seventh_Lab_OSPF&BGP/Multi-Area-OSPF-eBGP-Redistribution-Lab.gns3`
 - Config files: `Seventh_Lab_OSPF&BGP/project-files/dynamips/`
 - Topology Image: `Seventh_Lab_OSPF&BGP/images/topology.png`
+
+---
+
+## 📝 Author
+
+**Chakresh Ram Kudupudi**  
+Cybersecurity & Computer Networking Enthusiast  
+GNS3 | Cisco IOS | OSPF Multi-Area Routing
