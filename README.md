@@ -56,6 +56,11 @@ Networking-Labs/
 │   ├── README.md            # Lab documentation with advantages, disadvantages & topology
 │   └── images/              # Side-by-side STP vs RSTP topology screenshot
 │
+├── Tenth_Lab_STP Feature/   # Lab 10: STP Security Features (PortFast & BPDU Guard) Lab (Cisco Packet Tracer)
+│   ├── Tenth_Lab_STP Feature.pkt # Cisco Packet Tracer topology file
+│   ├── README.md            # Lab documentation with BPDU Guard enforcement, advantages & disadvantages
+│   └── images/              # PortFast & BPDU Guard violation screenshot
+│
 └── README.md                # Project documentation
 ```
 
@@ -157,6 +162,18 @@ Networking-Labs/
   - Comprehensive **Advantages and Disadvantages** evaluation for STP and RSTP
   - Cisco IOS Configuration: `spanning-tree mode rapid-pvst`, `spanning-tree vlan 1 priority`, `spanning-tree portfast`
   - Topology screenshot included (`images/stp_rstp_topology.png`)
+
+### 🔟 Tenth STP Security Features Lab (`Tenth_Lab_STP Feature/`)
+* **Objective**: Configure and analyze Layer 2 switch security hardening using **Spanning Tree PortFast** and **BPDU Guard** in Cisco Packet Tracer, demonstrating instant edge port bootup, suppression of campus TCN flushes, and immediate automated `err-disabled` isolation of unauthorized rogue switches.
+* **Key Concepts**:
+  - Spanning Tree PortFast (0-second instant forwarding for access ports)
+  - Suppression of Topology Change Notifications (TCNs) on edge ports
+  - Spanning Tree BPDU Guard (`spanning-tree bpduguard enable`)
+  - Rogue Switch Attack Mitigation & Automated `err-disabled` Port Shutdown
+  - Manual (`shutdown` / `no shutdown`) & Automated (`errdisable recovery cause bpduguard`) Port Recovery
+  - Comprehensive **Advantages and Disadvantages** evaluation for PortFast and BPDU Guard
+  - Cisco IOS Configuration: Interface-level & Global-level commands (`spanning-tree portfast default`, `spanning-tree portfast bpduguard default`)
+  - Topology screenshot included (`images/stp_features_bpduguard.png`)
 
 ---
 
