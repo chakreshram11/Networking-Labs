@@ -71,6 +71,11 @@ Networking-Labs/
 │   ├── README.md            # Lab documentation with ROAS, Multilayer SVI, advantages & disadvantages
 │   └── images/              # Inter-VLAN Routing topology screenshot
 │
+├── Thirteenth_Lab_Router-On-a-Stick Method Through DHCP/ # Lab 13: ROAS with Integrated DHCP (Cisco Packet Tracer)
+│   ├── Router-On-a-Stick Method Through DHCP.pkt # Cisco Packet Tracer topology file
+│   ├── README.md            # Lab documentation with DHCP pools, ROAS subinterfaces, advantages & disadvantages
+│   └── images/              # Topology, DHCP lease, ping verification screenshots
+│
 └── README.md                # Project documentation
 ```
 
@@ -205,6 +210,17 @@ Networking-Labs/
   - Host Default Gateway Mapping & Routing Table Inspection (`show ip route`)
   - Comprehensive **Advantages and Disadvantages** comparison of Router-on-a-Stick vs Layer 3 Switch SVI Routing
   - Topology screenshot included (`images/topology.png`)
+
+### 1️⃣3️⃣ Thirteenth ROAS with Integrated DHCP Lab (`Thirteenth_Lab_Router-On-a-Stick Method Through DHCP/`)
+* **Objective**: Configure and verify Router-on-a-Stick Inter-VLAN Routing combined with an integrated Cisco IOS DHCP Server on a Cisco ISR 4331 router in Cisco Packet Tracer, enabling automated dynamic IP parameter allocation (`192.168.1.0/24` & `192.168.2.0/24`), default gateways, custom DNS servers, and inter-VLAN routing across an 802.1Q trunk.
+* **Key Concepts**:
+  - Router-on-a-Stick Subinterfaces (`interface Gi0/0/0.10`, `interface Gi0/0/0.20`, `encapsulation dot1Q`)
+  - Cisco IOS DHCP Server Pools (`ip dhcp pool VLAN-10`, `ip dhcp pool VLAN-20`)
+  - DHCP Address Exclusions (`ip dhcp excluded-address 192.168.1.1 192.168.2.1`)
+  - Automated Host Onboarding & Dynamic Parameter Assignment (IP, Mask, Gateway, DNS)
+  - Inter-VLAN Traffic Routing & Verification (`ping 192.168.2.2`, `show ip dhcp binding`, `show ip dhcp pool`)
+  - Comprehensive **Advantages and Disadvantages** evaluation for ROAS with Integrated Router DHCP
+  - Screenshots included (`images/topology.png`, `images/pc0_dhcp.png`, `images/ping_test.png`, `images/switch_cli.png`)
 
 ---
 
