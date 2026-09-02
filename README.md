@@ -51,6 +51,11 @@ Networking-Labs/
 │   ├── images/              # Topology & CLI screenshots
 │   └── project-files/       # Router startup configs
 │
+├── Ninth_Lab_STP & RSTP/    # Lab 9: STP vs RSTP Spanning Tree Protocol Lab (Cisco Packet Tracer)
+│   ├── Ninth_Lab_STP & RSTP.pkt # Cisco Packet Tracer topology file
+│   ├── README.md            # Lab documentation with advantages, disadvantages & topology
+│   └── images/              # Side-by-side STP vs RSTP topology screenshot
+│
 └── README.md                # Project documentation
 ```
 
@@ -140,6 +145,18 @@ Networking-Labs/
   - BGP-to-OSPF Route Redistribution on ASBR `R2`
   - OSPF Database (LSDB) Comparison & Routing Table Simplification on Internal Router `R4`
   - Comprehensive screenshots included (`images/topology.png`, `images/r4_ip_route.png`, `images/r3_ip_route.png`, `images/r3_ospf_database.png`, `images/r4_ospf_database.png`)
+
+### 9️⃣ Ninth STP vs RSTP Spanning Tree Lab (`Ninth_Lab_STP & RSTP/`)
+* **Objective**: Compare traditional IEEE 802.1D Spanning Tree Protocol (STP / PVST+) and modern IEEE 802.1w Rapid Spanning Tree Protocol (RSTP / Rapid-PVST+) in Cisco Packet Tracer across redundant switch topologies, benchmarking convergence speed, port roles, port states, and protocol advantages & disadvantages.
+* **Key Concepts**:
+  - Layer 2 Loop Prevention (Broadcast Storm, MAC Table Instability, Multiple Frame Copies)
+  - IEEE 802.1D STP (PVST+) vs IEEE 802.1w RSTP (Rapid-PVST+)
+  - Root Bridge Selection Mechanism (Bridge Priority + MAC Address)
+  - Port Roles: Root Port (RP), Designated Port (DP), Alternate Port (AP), Backup Port (BP), Blocking Port
+  - Convergence Comparison: 30–50s Timer-based STP vs 1–2s Handshake-based RSTP
+  - Comprehensive **Advantages and Disadvantages** evaluation for STP and RSTP
+  - Cisco IOS Configuration: `spanning-tree mode rapid-pvst`, `spanning-tree vlan 1 priority`, `spanning-tree portfast`
+  - Topology screenshot included (`images/stp_rstp_topology.png`)
 
 ---
 
