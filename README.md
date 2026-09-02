@@ -66,6 +66,11 @@ Networking-Labs/
 │   ├── README.md            # Lab documentation with access/trunk configs, advantages & disadvantages
 │   └── images/              # Multi-VLAN 802.1Q trunk topology screenshot
 │
+├── Twelvth_Lab_Inter Vlan/  # Lab 12: Inter-VLAN Routing Lab (Cisco Packet Tracer)
+│   ├── Twelvth_Lab_Inter Vlan.pkt # Cisco Packet Tracer topology file
+│   ├── README.md            # Lab documentation with ROAS, Multilayer SVI, advantages & disadvantages
+│   └── images/              # Inter-VLAN Routing topology screenshot
+│
 └── README.md                # Project documentation
 ```
 
@@ -189,6 +194,16 @@ Networking-Labs/
   - Same-VLAN Inter-Switch Reachability Verification (`ping 192.168.1.2` for VLAN 10, `ping 192.168.1.4` for VLAN 30)
   - Inter-VLAN Isolation & Layer 3 Routing Requirement Explanation
   - Comprehensive **Advantages and Disadvantages** evaluation for VLANs and 802.1Q Trunk Links
+  - Topology screenshot included (`images/topology.png`)
+
+### 1️⃣2️⃣ Twelfth Inter-VLAN Routing Lab (`Twelvth_Lab_Inter Vlan/`)
+* **Objective**: Configure and verify Inter-VLAN Routing across distinct subnets (`192.168.10.0/24` & `192.168.20.0/24`) using two implementation methods in Cisco Packet Tracer: (1) **Router-on-a-Stick (ROAS)** using subinterfaces and 802.1Q trunking, and (2) **Layer 3 Multilayer Switch** using Switched Virtual Interfaces (SVIs) and `ip routing`.
+* **Key Concepts**:
+  - Inter-VLAN Layer 3 Communication between VLAN 10 (`SCALES`/`HR`) & VLAN 20 (`HR`/`MR`)
+  - Router-on-a-Stick Subinterface Encapsulation (`interface Gi0/0/0.10`, `encapsulation dot1Q 10`)
+  - Layer 3 Multilayer Switching (`Cisco Catalyst 3560`, `ip routing`, `interface Vlan 10` SVI)
+  - Host Default Gateway Mapping & Routing Table Inspection (`show ip route`)
+  - Comprehensive **Advantages and Disadvantages** comparison of Router-on-a-Stick vs Layer 3 Switch SVI Routing
   - Topology screenshot included (`images/topology.png`)
 
 ---
