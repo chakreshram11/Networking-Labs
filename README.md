@@ -61,6 +61,11 @@ Networking-Labs/
 │   ├── README.md            # Lab documentation with BPDU Guard enforcement, advantages & disadvantages
 │   └── images/              # PortFast & BPDU Guard violation screenshot
 │
+├── Eleventh_Lab_Trunk and Accessport/ # Lab 11: VLAN & 802.1Q Trunking Lab (Cisco Packet Tracer)
+│   ├── Eleventh_Lab_Trunk and Accessport.pkt # Cisco Packet Tracer topology file
+│   ├── README.md            # Lab documentation with access/trunk configs, advantages & disadvantages
+│   └── images/              # Multi-VLAN 802.1Q trunk topology screenshot
+│
 └── README.md                # Project documentation
 ```
 
@@ -174,6 +179,17 @@ Networking-Labs/
   - Comprehensive **Advantages and Disadvantages** evaluation for PortFast and BPDU Guard
   - Cisco IOS Configuration: Interface-level & Global-level commands (`spanning-tree portfast default`, `spanning-tree portfast bpduguard default`)
   - Topology screenshot included (`images/stp_features_bpduguard.png`)
+
+### 1️⃣1️⃣ Eleventh VLAN & 802.1Q Trunking Lab (`Eleventh_Lab_Trunk and Accessport/`)
+* **Objective**: Configure and verify Virtual Local Area Networks (VLAN 10 `CHAKRESH` & VLAN 30 `CHITTI`), access ports, and an IEEE 802.1Q inter-switch trunk link between Cisco 2960 switches in Cisco Packet Tracer, demonstrating Layer 2 traffic isolation and same-VLAN inter-switch communication.
+* **Key Concepts**:
+  - Layer 2 Logical Segmentation (VLAN 10 `CHAKRESH` & VLAN 30 `CHITTI`)
+  - Access Port Configuration (`switchport mode access`, `switchport access vlan <id>`)
+  - IEEE 802.1Q Trunk Link Configuration (`switchport mode trunk`, `switchport trunk allowed vlan 10,30`)
+  - Same-VLAN Inter-Switch Reachability Verification (`ping 192.168.1.2` for VLAN 10, `ping 192.168.1.4` for VLAN 30)
+  - Inter-VLAN Isolation & Layer 3 Routing Requirement Explanation
+  - Comprehensive **Advantages and Disadvantages** evaluation for VLANs and 802.1Q Trunk Links
+  - Topology screenshot included (`images/topology.png`)
 
 ---
 
