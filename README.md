@@ -45,6 +45,12 @@ Networking-Labs/
 │   ├── images/              # Topology screenshot
 │   └── project-files/       # Router startup configs & VPCS state
 │
+├── Eight_Stub_La/           # Lab 8: OSPF Stub Area & eBGP Route Redistribution Lab
+│   ├── Eight_Stub_Lab.gns3  # GNS3 Topology file
+│   ├── README.md            # Lab documentation with screenshots & topology
+│   ├── images/              # Topology & CLI screenshots
+│   └── project-files/       # Router startup configs
+│
 └── README.md                # Project documentation
 ```
 
@@ -123,6 +129,17 @@ Networking-Labs/
   - Cisco IOS DHCP Pool Configuration (`ospf-pool` on `R5` for `192.168.7.0/24`)
   - End-to-End Route Propagation and Reachability testing (`ping 8.8.8.8`) across autonomous systems
   - Topology screenshot included (`images/topology.png`)
+
+### 8️⃣ Eighth OSPF Stub Area & eBGP Lab (`Eight_Stub_La/`)
+* **Objective**: Configure and verify an OSPF Stub Area (`Area 1`) connected to an OSPF Backbone (`Area 0`) with eBGP route redistribution from AS 100 (`R1`) on ASBR `R2`, demonstrating Type 5 LSA filtering and automatic default route (`0.0.0.0/0`) injection by ABR `R3`.
+* **Key Concepts**:
+  - OSPF Stub Area Design (`area 1 stub` on ABR `R3` & Internal Router `R4`)
+  - Type 5 AS-External LSA Filtering in Stub Areas
+  - Automatic Type 3 Summary Default Route Injection (`0.0.0.0/0` via ABR `R3`)
+  - External BGP (eBGP) Peering between AS 100 (`R1`) & AS 300 (`R2`)
+  - BGP-to-OSPF Route Redistribution on ASBR `R2`
+  - OSPF Database (LSDB) Comparison & Routing Table Simplification on Internal Router `R4`
+  - Comprehensive screenshots included (`images/topology.png`, `images/r4_ip_route.png`, `images/r3_ip_route.png`, `images/r3_ospf_database.png`, `images/r4_ospf_database.png`)
 
 ---
 
