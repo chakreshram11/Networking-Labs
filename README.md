@@ -81,6 +81,11 @@ Networking-Labs/
 │   ├── README.md            # Lab documentation with VTP Server/Client/Transparent modes & verification
 │   └── topology.png         # Topology screenshot
 │
+├── Fifteenth_Lab_Ether Channel/ # Lab 15: Cisco EtherChannel (LACP & PAgP) Lab (Cisco Packet Tracer)
+│   ├── Ether Channel.pkt    # Cisco Packet Tracer topology file
+│   ├── README.md            # Lab documentation with LACP/PAgP modes, verification & troubleshooting
+│   └── Screenshot 2026-09-03 151629.png # Topology screenshot
+│
 └── README.md                # Project documentation
 ```
 
@@ -236,6 +241,15 @@ Networking-Labs/
   - 802.1Q Switch Trunking (`switchport mode trunk`) for VTP frame traversal
   - Verification & Troubleshooting (`show vtp status`, `show vlan brief`, `show interfaces trunk`)
   - Topology screenshot included (`topology.png`)
+
+### 1️⃣5️⃣ Fifteenth EtherChannel Lab (`Fifteenth_Lab_Ether Channel/`)
+* **Objective**: Configure and verify Cisco EtherChannel (Link Aggregation) across Cisco Catalyst 2960 switches in Cisco Packet Tracer using IEEE 802.3ad LACP (Link Aggregation Control Protocol) and Cisco proprietary PAgP (Port Aggregation Protocol), demonstrating aggregated bandwidth, link redundancy, and STP loop avoidance.
+* **Key Concepts**:
+  - EtherChannel / Link Aggregation (Port-Channel logical interface bundling)
+  - IEEE LACP (`active` / `passive` modes) vs Cisco PAgP (`desirable` / `auto` modes)
+  - Link Redundancy, Failover & Aggregated Bandwidth verification
+  - EtherChannel Verification & Troubleshooting (`show etherchannel summary`, `show lacp neighbor`, `show pagp neighbor`)
+  - Topology screenshot included (`Screenshot 2026-09-03 151629.png`)
 
 ---
 
