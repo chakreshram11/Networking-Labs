@@ -32,6 +32,8 @@ This lab covers two EtherChannel negotiation protocols:
 
 ## 🖥️ Topology
 
+![EtherChannel Lab Topology](./Screenshot%202026-09-03%20151629.png)
+
 ```text
                     EtherChannel
         =====================================
