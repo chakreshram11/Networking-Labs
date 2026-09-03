@@ -76,6 +76,11 @@ Networking-Labs/
 │   ├── README.md            # Lab documentation with DHCP pools, ROAS subinterfaces, advantages & disadvantages
 │   └── images/              # Topology, DHCP lease, ping verification screenshots
 │
+├── Forteenth_Lab_VLAN TRUNKING PROTOCOL/ # Lab 14: Cisco VTP (VLAN Trunking Protocol) Lab (Cisco Packet Tracer)
+│   ├── VLAN TRUNKING PROTOCOL.pkt # Cisco Packet Tracer topology file
+│   ├── README.md            # Lab documentation with VTP Server/Client/Transparent modes & verification
+│   └── topology.png         # Topology screenshot
+│
 └── README.md                # Project documentation
 ```
 
@@ -221,6 +226,16 @@ Networking-Labs/
   - Inter-VLAN Traffic Routing & Verification (`ping 192.168.2.2`, `show ip dhcp binding`, `show ip dhcp pool`)
   - Comprehensive **Advantages and Disadvantages** evaluation for ROAS with Integrated Router DHCP
   - Screenshots included (`images/topology.png`, `images/pc0_dhcp.png`, `images/ping_test.png`, `images/switch_cli.png`)
+
+### 1️⃣4️⃣ Fourteenth VTP Lab (`Forteenth_Lab_VLAN TRUNKING PROTOCOL/`)
+* **Objective**: Configure and verify Cisco VLAN Trunking Protocol (VTP) across Cisco Catalyst 2960 switches in Cisco Packet Tracer, demonstrating VTP Server, Client, and Transparent modes, 802.1Q trunking, VLAN propagation, revision numbers, and local database isolation.
+* **Key Concepts**:
+  - VTP Operating Modes: VTP Server (creates/modifies/advertises VLANs), VTP Client (receives & synchronizes VLAN database), VTP Transparent (maintains local VLANs & forwards advertisements)
+  - VTP Domain & Password Configuration (`vtp domain CCNA`, `vtp password cisco`)
+  - VTP Revision Number dynamics and security implications
+  - 802.1Q Switch Trunking (`switchport mode trunk`) for VTP frame traversal
+  - Verification & Troubleshooting (`show vtp status`, `show vlan brief`, `show interfaces trunk`)
+  - Topology screenshot included (`topology.png`)
 
 ---
 
