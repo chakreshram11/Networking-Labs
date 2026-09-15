@@ -86,6 +86,12 @@ Networking-Labs/
 │   ├── README.md            # Lab documentation with LACP/PAgP modes, verification & troubleshooting
 │   └── Screenshot 2026-09-03 151629.png # Topology screenshot
 │
+├── Eighteenth_Lab_Static_NAT_and_PAT/ # Lab 18: Cisco Static NAT & PAT (NAT Overload) Lab
+│   ├── NAT.gns3             # GNS3 Topology file
+│   ├── README.md            # Lab documentation with Static NAT & PAT configurations and verification
+│   ├── images/              # Topology screenshots (static-nat-topology.png & pat-topology.png)
+│   └── project-files/       # Device startup configs & packet captures (.pcap)
+│
 └── README.md                # Project documentation
 ```
 
@@ -250,6 +256,18 @@ Networking-Labs/
   - Link Redundancy, Failover & Aggregated Bandwidth verification
   - EtherChannel Verification & Troubleshooting (`show etherchannel summary`, `show lacp neighbor`, `show pagp neighbor`)
   - Topology screenshot included (`Screenshot 2026-09-03 151629.png`)
+
+### 1️⃣8️⃣ Eighteenth Static NAT & PAT Lab (`Eighteenth_Lab_Static_NAT_and_PAT/`)
+* **Objective**: Configure and verify Cisco IOS Network Address Translation (NAT) in GNS3, implementing one-to-one Static NAT and Port Address Translation (PAT / NAT Overload) using ACLs, inside/outside interfaces, and translation table verification.
+* **Key Concepts**:
+  - Network Address Translation (NAT) & Private-to-Public IP mapping
+  - Static NAT (1:1 permanent mapping for private server access)
+  - PAT / NAT Overload (Many:1 dynamic mapping sharing a single public IP via TCP/UDP ports)
+  - Cisco IOS NAT Interface Configuration (`ip nat inside`, `ip nat outside`)
+  - NAT Access Control List (`access-list 1 permit 192.168.1.0 0.0.0.255`)
+  - NAT Overload syntax (`ip nat inside source list 1 interface GigabitEthernet1/0 overload`)
+  - Verification & Troubleshooting (`show ip nat translations`, `show ip nat statistics`, `clear ip nat translation *`)
+  - Topology screenshots included (`images/static-nat-topology.png`, `images/pat-topology.png`)
 
 ---
 
