@@ -94,7 +94,7 @@ Networking-Labs/
 │
 ├── Nineteenth_Lab_Light_Weight_AccessPoints/ # Lab 19: Cisco Lightweight Access Point & WLC Lab
 │   ├── README.md                             # Lab documentation with WLC, LAP, WLAN, DHCP & wireless security configurations
-│   ├── images/                               # Topology and configuration screenshots
+│   ├── screenshots/                          # Topology and configuration screenshots
 │   │   ├── topology.png
 │   │   ├── router-configuration.png
 │   │   ├── wlc-ip-configuration.png
@@ -103,7 +103,8 @@ Networking-Labs/
 │   │   ├── wlan-setting-broadcast-to-ap.png
 │   │   ├── connecting-to-wlan-in-laptop.png
 │   │   └── mobile.png
-│   └── project-files/                        # Cisco Packet Tracer project file and related files
+│   └── LightWeightAccessPoints.pkt                        # Cisco Packet Tracer project file and related files
+│
 └── README.md                # Project documentation
 ```
 
